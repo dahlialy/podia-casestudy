@@ -18,6 +18,28 @@ body {
     line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-sans-serif);
+    color: #57312E;
+    line-height: 1.2;
+}
+
 img {
     display: block;
+    max-width: 100%;
 }
+
+.component img {
+    max-width: initial;
+}
+
+.component_img {
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.component_code {
+    border: 1px solid #ccc;
+}
+
+
