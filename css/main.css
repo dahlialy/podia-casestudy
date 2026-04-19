@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5 {
     font-family: var(--font-sans-serif);
     color: #57312E;
     line-height: 1.2;
+    font-weight: 500;
 }
 
 img {
