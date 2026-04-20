@@ -1,46 +1,23 @@
 :root {
---font-sans-serif: Aktiv Grotesk, sans-serif;
---black: #0c0b11;
---brown: #57312E;
---orange:#e59b4c;
---off-white: #f5f5f5;
+  --font-sans-serif: "aktiv-grotesk", sans-serif;
+  --black: #0c0b11;
+  --brown: #57312E;
+  --orange:#e59b4c;
+  --off-white: #f5f5f5;
 }
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 body { 
     font-family: var(--font-sans-serif);
-    font-family: aktiv-grotesk, sans-serif;
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: var(--font-sans-serif);
-    color: #57312E;
+    color: var(--brown);
     line-height: 1.2;
     font-weight: 500;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
-.component img {
-    max-width: initial;
-}
-
-.component_img {
-    border: 1px solid #ccc;
-    overflow-x: auto;
-}
-
-.component_code {
+.component-code {
     border: 1px solid #ccc;
 }
-
-
