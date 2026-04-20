@@ -107,6 +107,12 @@ p {
 
 .hero p {
   margin-top: var(--space-2);
+  padding: 20px;
+}
+
+.hero h2 {
+    padding-top: 20px;
+
 }
 
 /* =========================
@@ -130,7 +136,8 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: #e59b4c;
-  border-radius: 40px
+  border-radius: 25px;
+  padding: 40px;
 }
 
 .nav-center {
@@ -146,6 +153,9 @@ p {
   font-size: 0.95rem;
 }
 
+
+
+
 /* =========================
     buttons
 ========================= */
@@ -160,8 +170,8 @@ p {
 }
 
 .btn-primary {
-  background: var(--orange);
-  color: white;
+  background: #4E2C2A;
+  color: #F6DDC4;
 }
 
 .btn-secondary {
