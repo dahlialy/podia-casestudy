@@ -96,6 +96,8 @@ p {
 
 .hero {
   padding: var(--space-5) 0;
+  border: 2px solid #0c0b11;
+  background: #e59b4c;
 }
 
 .hero-container {
@@ -114,6 +116,7 @@ p {
     padding-top: 20px;
 
 }
+
 
 /* =========================
     component
@@ -188,6 +191,7 @@ img {
   max-width: 100%;
   border-radius: var(--radius);
 }
+
 
 /* =========================
    responsives
