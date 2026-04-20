@@ -1,11 +1,17 @@
 :root {
   --font-sans-serif: "aktiv-grotesk", sans-serif;
-  --black: #0c0b11;
-  --brown: #57312E;
-  --orange:#e59b4c;
-  --off-white: #f5f5f5;
+--black: #0c0b11;
+--brown: #57312E;
+--orange:#e59b4c;
+--off-white: #f5f5f5;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body { 
     font-family: var(--font-sans-serif);
     line-height: 1.5;
@@ -13,11 +19,64 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: var(--font-sans-serif);
-    color: var(--brown);
+    color: #57312E;
     line-height: 1.2;
     font-weight: 500;
 }
 
-.component-code {
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  max-width: 60ch;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.component img {
+    max-width: initial;
+}
+
+.component-img {
     border: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.component,
+.component-code {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background: white;
+}
+
+.component-name {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
