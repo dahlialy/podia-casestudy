@@ -203,6 +203,16 @@ p {
   text-decoration: none;
 }
 
+.btn-signup {
+    border-radius: 25px;
+    background-color: #4E2C2A;
+    text-decoration: none;
+    color: #f6f3ef;
+}
+
+.btn-login {
+    color:#4E2C2A;
+}
 .btn-primary {
   background: var(--orange);
   color: white;
@@ -217,6 +227,73 @@ p {
   border: 1px solid var(--border);
   background: white;
   color: var(--text);
+}
+
+/* =========================
+   footer
+========================= */
+
+.footer {
+  background: #d4883c;
+  padding: 50px;
+  color: #4E2C2A;
+}
+
+/* GRID */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr);
+  gap: 40px;
+  background: #d4883c;
+}
+
+/* BRAND */
+.footer-branding img {
+  max-width: 120px;
+}
+
+/* HEADINGS */
+.footer-col h3 {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* LINKS */
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #4E2C2A;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 16px 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================
