@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design System | Podia Case Study</title>
+  <title>Podia Case Study</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -15,93 +17,210 @@
 
 <main class="page">
 
-  <!-- HEADER -->
-  <header class="section container">
-    <h1>Design System</h1>
-    <p>Components and patterns inspired by Podia</p>
-  </header>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
 
-  <!-- NAVIGATION COMPONENT -->
-  <section class="section container">
-    <h2>Navigation</h2>
+      <div class="logo">Podia</div>
 
-    <div class="component">
-      <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#">Website</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
 
-        <div class="nav-left">
-          <strong>Podia</strong>
-        </div>
+      <div class="nav-actions">
+        <a href="#">Login</a>
+        <a class="btn btn-primary">Sign up free</a>
+      </div>
 
-        <ul class="nav-center">
-          <li><a href="#">Website</a></li>
-          <li><a href="#">Email</a></li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
-
-        <div class="nav-right">
-          <a class="btn btn-login" href="#">Login</a>
-          <a class="btn btn-primary" href="#">Sign up free</a>
-        </div>
-
-      </nav>
     </div>
-  </section>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero-container">
+    <div class="container hero-inner">
 
-        <div class="hero-text">
+      <div class="hero-text">
         <h1>A beautiful website in the next 10 minutes</h1>
-        <p>You don't have to choose between a website that looks amazing and one that's easy to build yourself</p>
-    <div class="hero-buttons">
-          <a class="btn btn-primary" href="#">Start your free trial</a>
-           <img class="molecule-hero-card" src="img/molecule-hero-card.png">
-    </div>
-
-        <h2>Pick a stunning template and make it yours</h2>
         <p>
-          Build websites that are beautiful, fast, and designed to convert visitors into customers.
+          You don’t have to choose between a website that looks amazing and one that’s easy to build yourself.
         </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary">Start your free trial</a>
+          <a class="btn btn-secondary">View examples</a>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- TYPOGRAPHY -->
-  <section class="section container">
-    <h2>Typography</h2>
-
-    <div class="component">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <p>Body text example showing readable line length and hierarchy.</p>
-    </div>
-  </section>
-
-  <!-- BUTTONS -->
-  <section class="section container">
-    <h2>Buttons</h2>
-
-    <div class="component">
-      <a class="btn btn-primary">Primary Button</a>
-      <a class="btn btn-secondary">Secondary Button</a>
-    </div>
-  </section>
-
-  <!-- CARD -->
-  <section class="section container">
-    <h2>Card</h2>
-
-    <div class="component">
-      <div class="card">
-        <h3>Pick a stunning template</h3>
-        <p>Build fast, beautiful, high-converting pages.</p>
+      <div class="hero-image">
+        <img src="../img/organism-hero.png" alt="">
       </div>
+
     </div>
   </section>
 
+  <section class="gallery section">
+    <div class="container">
+        <div class="container-header-grid">
+            <header class="container-title">
+                <h2>Pick a stunning template and make it yours</h2>
+            </header>
+        </div>
+    <div class="container-body-grid">
+        <p>Our site builder makes it easy to make websites that aren’t just beautiful to look at. They’re also built for performance, which means speed, SEO, and sales-boosting layouts.</p>
+    </div>
+    </div>
+
+    
+
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+
+      <h2>Features</h2>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <h3>Beautiful templates</h3>
+          <p>Create stunning pages quickly.</p>
+        </div>
+
+        <div class="card">
+          <h3>Built for speed</h3>
+          <p>Optimized for performance and SEO.</p>
+        </div>
+
+        <div class="card">
+          <h3>Easy customization</h3>
+          <p>Make it yours without coding.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPONENTS -->
+  <section class="section">
+    <div class="container">
+
+      <h2>Components</h2>
+
+      <div class="grid-2">
+
+        <div class="component">
+          <h3>Buttons</h3>
+          <a class="btn btn-primary">Primary</a>
+          <a class="btn btn-secondary">Secondary</a>
+        </div>
+
+        <div class="component">
+          <h3>Card</h3>
+          <div class="card">
+            <h3>Example Card</h3>
+            <p>Reusable UI block</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 </main>
+
+ <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contents-grid">
+            <div class="footer-branding">
+                <img src="../img/atom-header-logo.png">
+            </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-lists">
+                <li class="footer-nav-platform">
+                    <h3 class="footer-nav__heading">Platform</h3>
+                    <ul class="footer-subnav-platform">
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Website builder</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-ink | link" href="#">Online Store</a> </li>
+                        <li class="footer-subnav-list-tem">
+                        <a class="footer-nav-link | link" href="#">Email Marketing</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Pricing</a> </li>
+                    </ul>
+                </li>
+                 <li class="footer-nav-features">
+                    <h3 class="footer-nav__heading">Features</h3>
+                    <ul class="footer-subnav-features">
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Online Courses</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-ink | link" href="#">Digital Downloads</a> </li>
+                        <li class="footer-subnav-list-tem">
+                        <a class="footer-nav-link | link" href="#">Webinars</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Coaching</a> </li>
+                    </ul>
+                </li>
+                 <li class="footer-nav-platform">
+                    <h3 class="footer-nav__heading">Resources</h3>
+                    <ul class="footer-subnav-platform">
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Website builder</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-ink | link" href="#">Online Store</a> </li>
+                        <li class="footer-subnav-list-tem">
+                        <a class="footer-nav-link | link" href="#">Email Marketing</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Pricing</a> </li>
+                    </ul>
+                </li>
+                 <li class="footer-nav-platform">
+                    <h3 class="footer-nav__heading">Podia</h3>
+                    <ul class="footer-subnav-platform">
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Website builder</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-ink | link" href="#">Online Store</a> </li>
+                        <li class="footer-subnav-list-tem">
+                        <a class="footer-nav-link | link" href="#">Email Marketing</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Pricing</a> </li>
+                    </ul>
+                </li>
+                 <li class="footer-nav-platform">
+                    <h3 class="footer-nav__heading">Support</h3>
+                    <ul class="footer-subnav-platform">
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Website builder</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-ink | link" href="#">Online Store</a> </li>
+                        <li class="footer-subnav-list-tem">
+                        <a class="footer-nav-link | link" href="#">Email Marketing</a> </li>
+                        <li class="footer-subnav-list-item">
+                        <a class="footer-nav-link | link" href="#">Pricing</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="footer-credits">
+            
+        </div>
+
+
+
+
+
+    </footer>
+
+
 
 </body>
 </html>
