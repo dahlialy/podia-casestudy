@@ -4,10 +4,6 @@
 
 :root {
   --font: Inter, system-ui, sans-serif;
-
-  --text: #0c0b11;
-  --muted: #6b6b6b;
-
   --brown: #4E2C2A;
   --orange: #E49A4D;
 
@@ -58,12 +54,24 @@ h1 {
   font-weight: 600;
 }
 
+.podia-case-study {
+    padding-top: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: var(--space-3);
   border-bottom: 1px dotted black; 
+  padding-top: 25px;
+  margin-left: 10px;
   
+}
+
+.nav-bardd {
+    padding-top: 75px;
 }
 
 h3 {
@@ -72,9 +80,12 @@ h3 {
 }
 
 p {
-  color: var(--muted);
   font-size: 1.1rem;
   max-width: 60ch;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  color: #4E2C2A;
 }
 
 /* =========================
@@ -100,7 +111,7 @@ p {
 ========================= */
 
 .hero {
-  padding: 96px 0 80px;
+  padding: 25px 0 50px;
 }
 
 .hero-inner {
@@ -281,7 +292,7 @@ margin-top: 25px;
 }
 
 .dropdown .dropbtn:hover { 
-    background-color: #e7e2dc;
+    background-color: #543A26;
     color:#4E2C2A;
     border-radius: 20px;
 }
@@ -289,7 +300,7 @@ margin-top: 25px;
 /* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #4E2C2A;
-  color: #F6D6BF;
+  color: #F2DEB8;
   border-radius: 20px;
 }
 
@@ -297,7 +308,7 @@ margin-top: 25px;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F6D6BF;
+  background-color: #543A26;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -315,11 +326,6 @@ margin-top: 25px;
   
 }
 
-/* Add a light background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #FFF5F5;
-}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block; 
@@ -334,7 +340,7 @@ margin-top: 25px;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
-  color: #1E131C;
+  color: #543A26;
   padding: 12px 24px 12.5px 24px;
 
 
@@ -427,6 +433,63 @@ margin-top: 25px;
     background-color: #d4883c;
     color: #4E2C2A;
 }
+
+
+/* =========================
+    faq accordian
+========================= */
+
+
+/* Container styling */
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #543A26;
+}
+
+/* Style the details wrapper */
+details {
+  padding: 10px 0;
+  
+}
+
+/* Style the question (clickable area) */
+summary {
+  cursor: pointer;
+  list-style: none; /* Removes default arrow in some browsers */
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  color: #543A26;
+  padding: 25px;
+  size: 1rem;
+  font-weight: 500;
+}
+
+
+
+/* Custom arrow */
+summary::after {
+  content: '▼';
+  font-size: 1rem;
+  transition: transform 0.4s;
+  color: #543A26;
+  
+}
+
+/* Rotate arrow when open */
+details[open] summary::after {
+  transform: rotate(180deg);
+  color: #543A26;
+}
+
+/* Style the answer content */
+.answer {
+  padding-top: 10px;
+  color: #4E2C2A;
+}
+
+
 
 /* =========================
    footer
