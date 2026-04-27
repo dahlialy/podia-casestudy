@@ -50,7 +50,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   background-color: #E69A54;
   padding: 25px;
@@ -87,11 +87,13 @@ h2 {
   padding: 25px;
   border-radius: 20px;
 }
-
 p {
-  font-weight: 550;
+  font-weight: 500;
   color: #4E2C2A;
+  max-width: 80%;
+  padding: 25px;
 }
+
 
 /* =========================
    layout system
@@ -667,13 +669,15 @@ img vs code
   margin: 0;
   overflow-x: auto;
   position: relative;
+  padding: 20px;
+  display: grid;
 }
 
 .component__name {
   font-family: monospace;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: normal;
-  background: var(--gray-light);
+  background: #F2DEB8;
   padding: 0.25rem;
   margin: 0;
 }
@@ -681,6 +685,7 @@ img vs code
   border: 1px dashed #4E2C2A;
   margin: 0;
   position: relative;
+  padding: 20px;
 }
 
 .component__code:before,
@@ -722,4 +727,117 @@ img vs code
 }
 .sidebar-nav__list a {
   text-decoration: none;
+}
+
+
+
+.component-page {
+  display: block;
+  padding-top: 5rem;
+}
+.component-page__header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: var(--gray-light);
+  z-index: 100;
+}
+.component-page__header-container {
+  position: static;
+  padding: 1rem 2rem;
+}
+.component-page__nav {
+  display: none;
+}
+.component-page__section-heading {
+  margin-bottom: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  position: sticky;
+  top: 4.5rem;
+  z-index: 10;
+}
+.component-page .component__name {
+  position: sticky;
+  top: 6.5rem;
+  z-index: 9;
+}
+
+@media (min-width: 45rem) {
+  .component-page {
+    display: grid;
+    /* why minmax(0, 1fr)?
+			 See: https://css-tricks.com/preventing-a-grid-blowout/ */
+    grid-template-columns: 18rem minmax(0, 1fr);
+    grid-template-areas: "header main";
+    padding-top: 0;
+  }
+  .component-page__header {
+    position: relative;
+    padding: 1rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18rem;
+  }
+  .component-page__header-container {
+    padding: 1rem;
+  }
+
+  .component-page__nav {
+    display: block;
+    grid-area: nav;
+    margin-top: 1.33rem;
+  }
+  .component-page__main {
+    grid-area: main;
+  }
+  .component-page__section-heading {
+    top: 0;
+  }
+  .component-page .component__name {
+    top: 2rem;
+  }
+}
+
+.home-page__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+
+.wordmark {
+  font-weight: 950;
+}
+
+.nav-toggle img {
+  max-width: 5%;
+  background-color: #d4883c;
+  color: #4E2C2A;
+  padding: 10px;
+}
+
+.section-heading {
+  border-radius: 20px;
+}
+
+.section-paragraph {
+  background-color: #FFF6F5;
+  border-radius: 10px;
+  font-weight: 550;
+}
+
+
+.container .nav-inner {
+  background-color: #d4883c;
+  font-weight: 500;
+  color: #2f1c0d;
 }
