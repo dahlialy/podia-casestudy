@@ -174,6 +174,12 @@ p {
     
 }
 
+.gallery-grid img {
+max-width: max-content;
+max-height: 50%;
+
+}
+
 .image-link {
   position: relative;
   display: inline-block; /* Keeps the container the size of the image */
@@ -507,12 +513,15 @@ details[open] summary::after {
   position: relative;
   padding: none;
   margin: none;
+  border-radius: 10px;
+  background-color: #e8a461;
+  padding: 15px;
 }
 
 .animation::after {
   content: '';
   position: absolute;
-  height: 2px;
+  height: 5px;
   left: 0;
   bottom: 0;
   width: 0;
@@ -600,10 +609,11 @@ details[open] summary::after {
 }
 
 .footer-bottom {
-  display: grid;
-  grid-template-columns: 2fr repeat(5, 1fr);
-  grid-template-columns: 1fr;
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto;
   gap: 40px;
+  background-color: #d4883c;
 }
 
 
@@ -724,6 +734,7 @@ img vs code
 .sidebar-nav__list {
   list-style: none;
   padding: 0;
+  align-items: center;
 }
 .sidebar-nav__list a {
   text-decoration: none;
@@ -841,3 +852,99 @@ img vs code
   font-weight: 500;
   color: #2f1c0d;
 }
+
+a {
+  color:#4E2C2A;
+}
+
+.sidebar-nav__heading {
+  border-radius: 20px;
+  align-items: left;
+  margin-left: 0;
+  font-weight: 800;
+}
+
+
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-header {
+  margin-bottom: var(--space-5);
+}
+
+/* container for all items */
+.faq-list {
+  border-top: 1px solid var(--border);
+}
+
+/* each accordion item */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-3) 0;
+}
+
+/* clickable question */
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* remove default arrow */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* custom arrow */
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+/* rotate when open */
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+/* answer */
+.faq-answer {
+  margin-top: var(--space-2);
+  max-width: 600px;
+}
+
+.faq-answer p {
+  color: var(--muted);
+}
+
+/* subtle animation feel */
+.faq-item summary:hover {
+  opacity: 0.7;
+}
+
+.faq-list {
+  background-color: #F6D6BE;
+  color:#4E2C2A;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 0;
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.main-nav__list {
+background-color: #F6ECEC;
+text-decoration: none;
+color: #2f1c0d;
+font-size: 2rem;
+border-radius: 10px;
+}
+
