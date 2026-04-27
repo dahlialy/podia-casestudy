@@ -52,6 +52,10 @@ h1, h2, h3 {
 h1 {
   font-size: 3.2rem;
   font-weight: 600;
+  background-color: #E69A54;
+  padding: 25px;
+  border-radius: 20px;
+
 }
 
 .podia-case-study {
@@ -64,9 +68,10 @@ h2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: var(--space-3);
-  border-bottom: 1px dotted black; 
-  padding-top: 25px;
+  padding: 25px;
   margin-left: 10px;
+  background-color:#FFF5F5;
+
   
 }
 
@@ -74,15 +79,17 @@ h2 {
     padding-top: 75px;
 }
 
-h3 {
-  font-size: 1.25rem;
-  padding-bottom: 25px;
+.h3faq {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #543A26;
+  background-color: #F6D6BE;
+  padding: 25px;
+  border-radius: 20px;
 }
 
 p {
-  font-size: 1.1rem;
-  max-width: 60ch;
-  margin-top: 25px;
+  font-weight: 550;
   color: #4E2C2A;
 }
 
@@ -621,7 +628,6 @@ img {
     justify-content: center;
   }
 
-  .grid-3,
   .grid-2 {
     grid-template-columns: 1fr;
   }
@@ -643,5 +649,77 @@ img {
 }
 
 
+/* =========================
+img vs code
+========================= */
 
 
+.component {
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.component img {
+  max-width: initial;
+}
+.component__img {
+  border: 1px dashed #4E2C2A;
+  margin: 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.component__name {
+  font-family: monospace;
+  font-size: 1.25rem;
+  font-weight: normal;
+  background: var(--gray-light);
+  padding: 0.25rem;
+  margin: 0;
+}
+.component__code {
+  border: 1px dashed #4E2C2A;
+  margin: 0;
+  position: relative;
+}
+
+.component__code:before,
+.component__img:before {
+  content: "CODE";
+  display: block;
+  padding: 0.25rem;
+  line-height: 1;
+  font-family: monospace;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: var(--gray-light);
+  color: var(--gray-dark);
+}
+.component__img:before {
+  content: "IMG";
+}
+
+.sidebar-nav {
+  background: var(--gray-light);
+}
+.sidebar-nav__section {
+  margin-top: 2.5rem;
+}
+.sidebar-nav__heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.sidebar-nav__heading a {
+  text-decoration: none;
+  color: var(--black);
+}
+.sidebar-nav__list {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-nav__list a {
+  text-decoration: none;
+}
