@@ -40,7 +40,6 @@
               <li><a href="#nav-toggle">nav-toggle</a></li>
               <li><a href="#section-heading">section-heading</a></li>
               <li><a href="#action-link">action-link</a></li>
-              <li><a href="#icon--circle">icon--circle</a></li>
             </ul>
           </section>
           <section class="sidebar-nav__section">
@@ -65,7 +64,6 @@
               <a href="#cover-section">Cover Section</a>
             </h2>
             <ul class="sidebar-nav__list">
-              <li><a href="#cover-section">cover-section</a></li>
               <li>
                 <a href="#cover-section__contents">cover-section__contents</a>
               </li>
@@ -182,15 +180,6 @@
             <a href="#!" class="animation">login</a>
           </div>
         </article>
-        <article id="icon--circle" class="component component--is-done">
-          <h3 class="component__name">.icon--circle</h3>
-          <div class="component__img">
-            <img srcset="./img/icon--circle@2x.png 2x" src="./img/icon--circle@2x.png" alt="icon circle">
-          </div>
-          <div class="component__code">
-            <a href="#!" class="icon--circle"><i class="fab fa-instagram"></i></a>
-          </div>
-        </article>
       </section>
     <!-- PAGE HEADER -->
       <section class="page-section">
@@ -200,21 +189,27 @@
         <article class="component component--is-done">
           <h3 class="component__name">.page-header</h3>
           <div class="component__img">
-            <img srcset="./img/page-header@2x.png 2x" src="./img/page-header@2x.png" alt="page header">
+            <img srcset="img/page-header.png 2x" src=".mg/page-header.png" alt="page header">
           </div>
           <div class="component__code">
             <header class="page-header">
               <h1 class="wordmark">
                 <span class="wordmark__line">Podia</span>
-                <span class="wordmark__line">Website</span>
+                   <div class="nav-actions">
+                   <a class="btn btn-login" href="#">Login</a>
+                   <a class="btn btn-signup" href="#">Sign up free</a>
+                    </div>
+                    <a href="#!" class="nav-toggle"><img src="img/menu-svgrepo-com.svg"></a>
+
+                    
               </h1>
-              <nav>
-                <a href="#!" class="nav-toggle">Menu</a>
-              </nav>
             </header>
           </div>
         </article>
       </section>
+
+
+      <!-- NAV -->
 
       <section class="page-section">
         <h2 id="main-nav" class="component-page__section-heading">Main Nav</h2>
@@ -228,8 +223,8 @@
           <div class="component__code">
           <div class="container nav-inner">
 
-            <div class="logo">Podia</div>
-
+            <div class="logo"><img src="img/atom-header-logo.png"></div>
+        
             <ul class="nav-links">
                  <li><a href="#">Website</a></li>
                 <li><a href="#">Email</a></li>
@@ -265,6 +260,9 @@
         </article>
       </section>
 
+
+
+ <!-- GALLERY -->
       <section class="page-section">
         <h2 id="cover-section" class="component-page__section-heading">
           Gallery Cover Section (Grid)
@@ -342,6 +340,7 @@
               </div>
             </article>
 
+    <!-- CARD -->
         <article id="cover-section__contents" class="component component--is-done">
           <h3 class="component__name">.cover-section__contents</h3>
           <div class="component__img">
@@ -372,6 +371,7 @@
         </article>
 
 
+      <!-- FAQ -->      
         
         <article id="cover-section--faq" class="component component--is-done">
           <h3 class="component__name">.cover-section .cover-section-faq</h3>
@@ -430,6 +430,10 @@
          </div>
         </article>
 
+
+    <!-- HERO -->        
+
+
         <article id="cover-section--hero" class="component component--is-done">
           <h3 class="component__name">.cover-section .cover-section--hero</h3>
           <div class="component__img">
@@ -460,6 +464,8 @@
     </article>
       </section>
 
+
+     <!-- FOOTER -->     
       <section class="page-section">
         <h2 id="page-footer" class="component-page__section-heading">
           Page Footer
@@ -518,7 +524,7 @@
 
 
 
-
+    <!-- FOOTER SOCIALS  -->
         <article id="social-list" class="component component--is-done">
           <h3 class="component__name">.social-list</h3>
           <div class="component__img">

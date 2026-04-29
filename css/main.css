@@ -254,9 +254,9 @@ margin-top: 25px;
 }
 
 .nav-actions {
-  display: flex;
+  display: right;
   gap: 16px;
-  align-items: center;
+  align-items: right;
 }
 
 
@@ -726,6 +726,7 @@ img vs code
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  max-width: fit-content;
 }
 .sidebar-nav__heading a {
   text-decoration: none;
@@ -834,6 +835,7 @@ img vs code
   background-color: #d4883c;
   color: #4E2C2A;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .section-heading {
@@ -848,9 +850,14 @@ img vs code
 
 
 .container .nav-inner {
-  background-color: #d4883c;
+  background-color: #e0964c;
   font-weight: 500;
   color: #2f1c0d;
+}
+
+.logo img {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 a {
@@ -946,5 +953,22 @@ text-decoration: none;
 color: #2f1c0d;
 font-size: 2rem;
 border-radius: 10px;
+padding: 10px;
 }
 
+.main-nav__list a {
+background-color: #F6ECEC;
+text-decoration: none;
+color: #2f1c0d;
+font-size: 2rem;
+border-radius: 20px;
+padding: 15px;
+}
+
+.main-nav__list a {
+background-color: #F6ECEC;
+text-decoration: none;
+color: #2f1c0d;
+font-size: 2rem;
+border-radius: 20px;
+}
