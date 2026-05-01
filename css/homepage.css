@@ -1,0 +1,289 @@
+/* RESET / BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.hero {
+  padding-top: 140px;
+}
+
+.card {
+  padding: 40px;
+}
+
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f7fb 100%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #E49A4D;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: #E69A54;
+  padding: 25px;
+  border-radius: 20px;
+
+}
+
+/* LAYOUT */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* NAVBAR */
+.nav {
+  background: #E49A4D;
+  border-bottom: 1px solid #452723;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+nav-toggle {
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #452723;
+  color: #E49A4D;
+  box-shadow: 0 8px 20px rgba #452723 ;
+}
+
+.btn-primary:hover {
+  background: #452723;
+  transform: translateY(-2px);
+
+}
+
+.btn-secondary {
+  border: 1px solid #452723;
+  color: #333;
+}
+
+.btn-login {
+  color: #452723;
+}
+
+.btn-signup {
+  background: #452723;
+  color: #F6DDC4;
+}
+
+/* HERO */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+/* GRID SYSTEM */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARDS */
+.card {
+  background: #452723;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  color: #eee9e3;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  list-style: none;
+}
+
+.gallery-grid li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.gallery-grid img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-grid li:hover img {
+  transform: scale(1.08);
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.gallery-grid li:hover .hover-text {
+  opacity: 1;
+}
+
+/* FAQ */
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+details {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+  background: #D3883C;
+  color: #452723;
+  padding-top: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.footer-col a {
+  display: block;
+  color: #452723;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.footer-col a:hover {
+  color: #452723;
+}
+
+.footer-bottom {
+  border-top: 1px solid #E49A4D;
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
