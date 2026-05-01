@@ -419,8 +419,8 @@ margin-top: 25px;
     color:#4E2C2A;
 }
 .btn-primary {
-  background: var(--orange);
-  color: white;
+  background: #2f1c0d;
+  color: #F6D6BE;
   box-shadow: 0 2px 0 rgba(0,0,0,0.05);
 }
 
@@ -970,4 +970,18 @@ text-decoration: none;
 color: #2f1c0d;
 font-size: 2rem;
 border-radius: 20px;
+}
+
+.hero-card img {
+    max-width: 100%; /* Image shrinks if container is smaller */
+  height: auto; 
+
+}
+.hero-img {
+  max-width: 100%; /* Image shrinks if container is smaller */
+  height: auto; 
+}
+
+.container .hero-inner{
+  background-color: #e29c55;
 }
