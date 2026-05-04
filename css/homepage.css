@@ -399,26 +399,54 @@ nav-toggle {
     background-color: #F6D6BF;
     color: #452723;
     padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2rem;
 }
 
 .bex-img {
-    max-width: 400px;
+    width: 581px;
+    height: 762px;
+    
 }
 
+.bex-p {
+    padding-top: 50px;
+    color:#452723;
+    font-weight: 200;
 
+}
+
+.cite {
+    font-size: xx-small;
+    font-weight: 100;
+}
+
+.bexbtn {
+    background-color: #452723;
+    color: #F6D6BF;
+    margin-top: 50px;
+    size: 20px;
+}
 
 /* =========================
    FAQ
 ========================= */
 
+.faq {
+    padding: 50px;
+    background-color: #F6D6BF;
+    color: #452723;
+}
+
 
 .faq-container {
   max-width: 700px;
   margin: 0 auto;
+  padding: 25px;
 }
 
 details {
-  background: #fff;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -427,6 +455,10 @@ details {
 
 summary {
   font-weight: 600;
+}
+
+.answer {
+    padding: 25px;
 }
 
 /* =========================
