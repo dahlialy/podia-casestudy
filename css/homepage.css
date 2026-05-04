@@ -533,3 +533,36 @@ summary {
     grid-template-columns: 1fr;
   }
 }
+.credits {
+    margin-top: 25px;
+    color: #452723;
+    font-weight: 100;
+}
+.legal-links a {
+    font-weight: 200;
+    text-decoration: none;
+    color: #452723;
+}
+
+.legal-links a:hover {
+    font-weight: 200;
+    text-decoration: none;
+    color: #452723;
+    border-bottom: #452723 1px solid;
+    display: inline-block;
+    position: relative;
+    transition: width 0.3s ease-out;
+    content: '';
+}
+
+.legal-links a:hover::after {
+ width: 100%;
+}
+
+a:hover {
+    font-weight: 200;
+    text-decoration: none;
+    color: #452723;
+    border-bottom: #452723 1px solid;
+    position: relative;
+}
