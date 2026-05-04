@@ -44,7 +44,6 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: 600;
-  background-color: #E69A54;
   padding: 25px;
   border-radius: 20px;
   margin-block-start: 0.83em;
@@ -77,6 +76,42 @@ p {
 .section {
   padding: 80px 0;
 }
+
+
+/* =========================
+  IMAGES
+========================= */
+
+.img {
+
+     width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.header-images img {
+  max-width: 900px;
+  width: 100%;
+  margin: 40px auto;
+  display: block;
+}
+
+.feature img {
+  max-width: 480px;
+  width: 100%;
+}
+
+
+
+.hero-image {
+  max-width: 500px;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
 /* =========================
    nav bar 
 ========================= */
@@ -261,13 +296,14 @@ nav-toggle {
 
 .gallery-heading {
     font-weight: 900;
-    color: #333;
+    color: #141414;
     align-items: center;
 }
 
 .gallery-p {
     align-items: center;
     display: block;
+     color: #141414;
     padding-top: 25px;
     padding-bottom: 25px;
     
@@ -333,19 +369,46 @@ nav-toggle {
   opacity: 1;
 }
 
-.header-images-h1 {
-    background-color: #eee;
+.header-images-h2 {
+    background-color: #FFF5F5;
+    margin: 0;
+    padding: 100px; 
+    padding-left: 125px;
 
 }
 
 .header-images-p {
-    padding: 25px;
-    background-color: #eee;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 75px;
+    background-color: #FFF5F5;
 }
 
 .header-images {
-    background-color: #eee;
+    background-color: #FFF5F5;
 }
+
+.blog {
+    background-color: #141414;
+    color: #eee;
+
+}
+
+
+/* =========================
+   bex irvine
+========================= */
+
+.bex {
+    background-color: #F6D6BF;
+    color: #452723;
+    padding-top: 50px;
+}
+
+.bex-img {
+    max-width: 400px;
+}
+
 
 
 /* =========================
