@@ -111,6 +111,7 @@ p {
 /* =========================
    nav bar 
 ========================= */
+
 .nav {
   background: #E49A4D;
   border-bottom: 1px solid #452723;
@@ -118,32 +119,52 @@ p {
 
 .nav-inner {
   display: flex;
-  align-items: center;
+  align-items: center; 
   justify-content: space-between;
-  padding: 20px 0;
+  height: 72px;     
 }
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  align-items: center;   /* aligns text vertically */
+  gap: 32px;
   list-style: none;
 }
 
 .nav-links a {
+  display: flex;         /* important */
+  align-items: center;   /* centers text */
+  height: 72px;          /* matches navbar height */
   text-decoration: none;
-  color: #333;
+  color: #452723;
   font-weight: 500;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
 }
 
 .nav-actions {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
 }
 
 nav-toggle {
     max-width: 100%;
     max-height: auto;
 }
+
+.nav-links img {
+  height: 50px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* tweak -1px to +2px */
+}
+
+
+
 
 /* =========================
    BUTTONS 
