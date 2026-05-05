@@ -206,6 +206,13 @@ nav-toggle {
   color: #F6DDC4;
 }
 
+.btn-signup:hover {
+ color: #452723;
+ background-color: #F6D6BF;
+ font-weight: 600;
+  transition: all 0.5s ease-out;
+}
+
 
 
 /* =========================
@@ -388,17 +395,19 @@ nav-toggle {
 
 .header-images-h2 {
     background-color: #FFF5F5;
-    margin: 0;
-    padding: 100px; 
-    padding-left: 125px;
+    padding: 20px;
 
 }
 
+.headerh2 {
+    padding-left: 40px;
+
+}
 .header-images-p {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 75px;
+    margin-left: 45px;
     background-color: #FFF5F5;
+    margin-right: 45px;
+    margin-bottom: 50px;
 }
 
 .header-images {
@@ -409,6 +418,10 @@ nav-toggle {
     background-color: #141414;
     color: #eee;
 
+}
+
+.btn.btn-primary.blog {
+ margin-left: 50px;
 }
 
 
@@ -427,7 +440,10 @@ nav-toggle {
 
 .bex-img {
     width: 581px;
-    height: 762px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
     
 }
 
@@ -449,6 +465,13 @@ nav-toggle {
     margin-top: 50px;
     size: 20px;
 }
+
+.bexbtn a:hover {
+    background-color: #452723;
+    color: #F6D6BF;
+    
+}
+
 
 /* =========================
    FAQ
