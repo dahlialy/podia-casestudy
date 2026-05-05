@@ -491,12 +491,16 @@ summary {
   background: #D3883C;
   color: #452723;
   padding-top: 60px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .footer-col a {
@@ -516,6 +520,11 @@ summary {
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
+}
+
+.footer-branding img {
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 
